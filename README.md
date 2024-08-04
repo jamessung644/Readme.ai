@@ -1,6 +1,7 @@
-# Project Title
+# Readme.ai
 
-This project is a web application built with [React](https://reactjs.org/). This document provides instructions for installing the essential packages required to run the project.
+This project is a web application built with [React](https://reactjs.org/). 
+This document provides instructions for installing the essential packages required to run the project.
 
 ## Required Packages
 
