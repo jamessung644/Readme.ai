@@ -1,17 +1,21 @@
-## Running React on Replit
+# Project Title
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+This project is a web application built with [React](https://reactjs.org/). This document provides instructions for installing the essential packages required to run the project.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+## Required Packages
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+The project uses two main packages: `react-router-dom` and `react-quill`. To install these packages, use the following commands.
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+### `react-router-dom`
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+`react-router-dom` is used for managing routing in a React application. To install this package, run:
 
-### Typescript
+npm install react-router-dom
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+### `react-quill`
+
+`react-quill` integrates a rich text editor into your React application. To install this package, run:
+
+npm install react-quill
+
+After installing these packages, you should be able to run the project successfully. For additional configuration, refer to the documentation for each package.
