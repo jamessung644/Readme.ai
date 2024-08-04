@@ -10,12 +10,15 @@ The project uses two main packages: `react-router-dom` and `react-quill`. To ins
 
 `react-router-dom` is used for managing routing in a React application. To install this package, run:
 
-npm install react-router-dom
+```bash
+  npm install react-router-dom
+```
 
 ### `react-quill`
 
 `react-quill` integrates a rich text editor into your React application. To install this package, run:
-
-npm install react-quill
+```bash
+  npm install react-quill
+```
 
 After installing these packages, you should be able to run the project successfully. For additional configuration, refer to the documentation for each package.
