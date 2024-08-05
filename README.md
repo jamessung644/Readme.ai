@@ -22,4 +22,10 @@ The project uses two main packages: `react-router-dom` and `react-quill`. To ins
   npm install react-quill
 ```
 
+### `html-to-markdown`
+
+`html-to-markdown`
+```bash
+  npm install html-to-markdown
+```
 After installing these packages, you should be able to run the project successfully. For additional configuration, refer to the documentation for each package.
