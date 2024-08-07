@@ -1,24 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import './MarkdownEditor.css';
 import htmlToMarkdown from 'html-to-markdown';
 
-const MarkdownEditor = ({ onContentChange }) => {
-  const [content, setContent] = useState('');
+const MarkdownEditor = ({ onContentChange, content }) => {
+  const [editorContent, setEditorContent] = useState(content);
+
+  useEffect(() => {
+    setEditorContent(content);
+  }, [content]);
 
   const handleChange = (value) => {
-    setContent(value);
+    setEditorContent(value);
     onContentChange(value);
   };
 
   const convertToMarkdown = () => {
-    return htmlToMarkdown.convert(content);
+    return htmlToMarkdown.convert(editorContent);
   };
 
   return (
     <div>
-      <ReactQuill value={content} onChange={handleChange} />
+      <ReactQuill value={editorContent} onChange={handleChange} />
       <button onClick={() => navigator.clipboard.writeText(convertToMarkdown())}>
         Copy Markdown to Clipboard
       </button>
